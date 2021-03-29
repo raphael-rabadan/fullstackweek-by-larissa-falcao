@@ -1,0 +1,5 @@
+
+spring.datasource.url=jdbc:postgresql://5432/evaccine
+spring.datasource.username=postgres
+spring.datasource.password=P032019**s
+spring.jpa.hibernate.ddl-auto=update

@@ -1,0 +1,12 @@
+package br.com.larrisafalcao.fullstackweek.repository.resources;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.larrisafalcao.fullstackweek.repository.PessoaRepository;
+
+public class GruposPrioridadesResource {
+	
+	@Autowired
+	private PessoaRepository pessoaRepository;
+
+}

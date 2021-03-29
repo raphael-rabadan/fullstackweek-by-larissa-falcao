@@ -1,0 +1,5 @@
+package br.com.larrisafalcao.fullstackwee.repository;
+
+public interface PessoaRepository {
+
+}

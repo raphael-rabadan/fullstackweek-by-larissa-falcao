@@ -1,0 +1,28 @@
+package br.com.larrisafalcao.fullstackweek.repository.resources;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import br.com.larrisafalcao.fullstackweek.domain.Pessoa;
+import br.com.larrisafalcao.fullstackweek.repository.PessoaRepository;
+
+public class GruposPrioridadesResource {
+	
+	@Autowired
+	private PessoaRepository pessoaRepository;
+	
+	@GetMapping
+	public List<Pessoa> listarTodos(){
+		return pessoaRepository.findAll();
+	}
+	
+	public Pessoa cadastrarPessoa (@RequestBody Pessoa pessoa) {
+		Pessoa pessoaCadastrada = pessoaRepository.save(pessoa);
+		pessoaCadastrada.setIsVacinada(false);;
+		return pessoaRepository.save(pessoaCadastrada);
+	}
+
+}

@@ -1,0 +1,6 @@
+package br.com.larrisafalcao.fullstackweek.domain;
+
+@Entity
+public class Pessoa {
+
+}
